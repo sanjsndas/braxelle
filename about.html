@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Braxelle Design Lines</title>
+    <meta name="description" content="About Braxelle Design Lines — independent editorial publication covering interior design, residential architecture, space planning, materials, lighting, and modern homes.">
+    <meta name="author" content="Braxelle Design Lines">
+    <link rel="canonical" href="https://braxelledesignlines.com/about.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About | Braxelle Design Lines">
+    <meta property="og:description" content="Independent editorial publication covering interior design, residential architecture, space planning, materials, lighting, and modern homes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://braxelledesignlines.com/about.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Braxelle Design Lines">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Braxelle Design Lines",
+        "description": "Independent editorial publication covering interior design, residential architecture, space planning, materials, lighting, and modern homes.",
+        "url": "https://braxelledesignlines.com/about.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Braxelle Design Lines"
+        }
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --ink-soft: #3d3d3d;
+            --ink-muted: #6b6b6b;
+            --paper: #faf9f7;
+            --paper-warm: #f5f2ed;
+            --border: #e0ddd8;
+            --border-light: #ebe8e3;
+            --accent: #8b7355;
+            --accent-hover: #6d5a44;
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --measure: 68ch;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink-soft);
+            line-height: 1.7;
+            font-size: 1rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .logo-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+        }
+
+        .logo-tagline {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--ink-muted);
+            font-weight: 500;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 0.25rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.4rem 0.75rem;
+            border-radius: 2px;
+            transition: color 0.2s, background 0.2s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: var(--ink);
+            background: var(--paper-warm);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 0.45rem 0.85rem;
+            font-size: 0.78rem;
+            font-family: var(--font-body);
+            color: var(--ink-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .search-toggle:hover {
+            border-color: var(--ink-muted);
+            color: var(--ink);
+        }
+
+        /* ─── SEARCH BAR ─── */
+        .search-bar {
+            display: none;
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+        }
+
+        .search-bar.open {
+            display: block;
+        }
+
+        .search-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .search-inner input {
+            flex: 1;
+            padding: 0.65rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            background: var(--paper);
+            color: var(--ink);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-inner input:focus {
+            border-color: var(--accent);
+        }
+
+        .search-inner button {
+            padding: 0.65rem 1.25rem;
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-inner button:hover {
+            background: var(--accent);
+        }
+
+        /* ─── CATEGORY BAR (same as homepage) ─── */
+        .category-bar {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper-warm);
+            overflow-x: auto;
+        }
+
+        .category-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.6rem 2rem;
+            display: flex;
+            gap: 0.35rem;
+            white-space: nowrap;
+        }
+
+        .cat-pill {
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.4rem 0.9rem;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: none;
+            font-family: var(--font-body);
+        }
+
+        .cat-pill:hover {
+            color: var(--ink);
+            border-color: var(--border);
+        }
+
+        .cat-pill.active {
+            background: var(--ink);
+            color: var(--paper);
+            border-color: var(--ink);
+        }
+
+        /* ─── MAIN LAYOUT ─── */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ─── ABOUT HERO ─── */
+        .about-hero {
+            padding: 4rem 0 3rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .about-hero h1 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            line-height: 1.15;
+            color: var(--ink);
+            font-weight: 400;
+            max-width: 18ch;
+            margin-bottom: 1.25rem;
+        }
+
+        .about-hero .lead {
+            font-size: 1.25rem;
+            line-height: 1.7;
+            color: var(--ink-muted);
+            max-width: 62ch;
+            font-weight: 300;
+        }
+
+        /* ─── MISSION SECTION ─── */
+        .mission-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-light);
+            margin-bottom: 3rem;
+        }
+
+        .mission-text h2 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 1.25rem;
+            line-height: 1.3;
+        }
+
+        .mission-text p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--ink-soft);
+            margin-bottom: 1rem;
+            max-width: var(--measure);
+        }
+
+        .mission-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .mission-image {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        /* ─── VALUES GRID ─── */
+        .values-section {
+            padding: 2rem 0 3rem;
+            border-bottom: 1px solid var(--border-light);
+            margin-bottom: 3rem;
+        }
+
+        .values-section h2 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 2rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .value-item h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+        }
+
+        .value-item p {
+            font-size: 0.92rem;
+            line-height: 1.75;
+            color: var(--ink-muted);
+        }
+
+        .value-marker {
+            display: inline-block;
+            width: 2rem;
+            height: 2px;
+            background: var(--accent);
+            margin-bottom: 1.25rem;
+        }
+
+        /* ─── TEAM SECTION ─── */
+        .team-section {
+            padding: 2rem 0 3rem;
+            border-bottom: 1px solid var(--border-light);
+            margin-bottom: 3rem;
+        }
+
+        .team-section h2 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .team-member {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background: var(--paper-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 2px;
+            padding: 1.75rem;
+        }
+
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 2px solid var(--border);
+        }
+
+        .team-member h3 {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 0.2rem;
+        }
+
+        .team-role {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+        }
+
+        .team-member p {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            color: var(--ink-muted);
+        }
+
+        /* ─── EDITORIAL POLICY ─── */
+        .editorial-policy {
+            padding: 2rem 0 3rem;
+            border-bottom: 1px solid var(--border-light);
+            margin-bottom: 3rem;
+        }
+
+        .editorial-policy h2 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 1.25rem;
+        }
+
+        .editorial-policy p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--ink-soft);
+            max-width: var(--measure);
+            margin-bottom: 1rem;
+        }
+
+        .editorial-policy ul {
+            list-style: none;
+            margin: 1.5rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .editorial-policy li {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--ink-soft);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .editorial-policy li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* ─── CONTACT CTA ─── */
+        .contact-cta {
+            background: var(--paper-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 2px;
+            padding: 2.5rem;
+            margin: 2rem 0 3rem;
+            text-align: center;
+        }
+
+        .contact-cta h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-cta p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--ink-muted);
+            max-width: 50ch;
+            margin: 0 auto 1.5rem;
+        }
+
+        .contact-cta .cta-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-cta a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid var(--ink);
+            padding-bottom: 0.15rem;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .contact-cta a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer {
+            background: var(--ink);
+            color: rgba(250,249,247,0.7);
+            padding: 4rem 0 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo-name {
+            color: var(--paper);
+            font-size: 1.3rem;
+        }
+
+        .footer-brand .logo-tagline {
+            color: rgba(250,249,247,0.5);
+        }
+
+        .footer-brand p {
+            font-size: 0.82rem;
+            line-height: 1.7;
+            margin-top: 1rem;
+            color: rgba(250,249,247,0.55);
+            max-width: 32ch;
+        }
+
+        .footer-col h4 {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--paper);
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .footer-col a {
+            font-size: 0.82rem;
+            color: rgba(250,249,247,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--paper);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(250,249,247,0.12);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: rgba(250,249,247,0.4);
+        }
+
+        .footer-bottom a {
+            color: rgba(250,249,247,0.5);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--paper);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 1024px) {
+            .mission-section {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .mission-image {
+                height: 300px;
+            }
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding: 1rem 1.5rem;
+            }
+            .main-nav {
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.72rem;
+                padding: 0.35rem 0.5rem;
+            }
+            .container {
+                padding: 0 1.5rem;
+            }
+            .about-hero h1 {
+                font-size: 2.2rem;
+            }
+            .about-hero .lead {
+                font-size: 1.05rem;
+            }
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .team-member {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .contact-cta {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-hero h1 {
+                font-size: 1.8rem;
+            }
+            .mission-text h2,
+            .values-section h2,
+            .team-section h2,
+            .editorial-policy h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* utility */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-name">Braxelle Design Lines</span>
+            <span class="logo-tagline">Interior Design &amp; Architecture Journal</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                Search
+            </button>
+        </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+        <div class="search-inner">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+            <button id="searchBtn">Search</button>
+        </div>
+    </div>
+</header>
+
+<!-- ─── CATEGORY BAR (same as homepage) ─── -->
+<div class="category-bar">
+    <div class="category-inner" id="categoryBar">
+        <button class="cat-pill active" data-cat="all">All</button>
+        <button class="cat-pill" data-cat="interior">Interior Design</button>
+        <button class="cat-pill" data-cat="architecture">Architecture</button>
+        <button class="cat-pill" data-cat="home">Home Design</button>
+        <button class="cat-pill" data-cat="materials">Materials</button>
+        <button class="cat-pill" data-cat="space">Space Planning</button>
+        <button class="cat-pill" data-cat="lighting">Lighting</button>
+        <button class="cat-pill" data-cat="furniture">Furniture</button>
+        <button class="cat-pill" data-cat="modern">Modern Homes</button>
+    </div>
+</div>
+
+<!-- ─── MAIN CONTENT ─── -->
+<div class="container">
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+        <h1>Design writing that respects the reader.</h1>
+        <p class="lead">Braxelle Design Lines is an independent editorial publication devoted to interior design and architecture. We publish long-form articles, practical guides, and critical essays for people who care about how buildings and interiors are made—and why they matter.</p>
+    </section>
+
+    <!-- MISSION -->
+    <section class="mission-section">
+        <div class="mission-text">
+            <h2>Our mission</h2>
+            <p>We believe that architecture and interior design are not luxuries or mere aesthetics—they are the backdrop of daily life, shaping how we feel, how we gather, and how we inhabit the world. Good design writing should be accessible without being shallow, rigorous without being academic, and useful long after the latest trend has passed.</p>
+            <p>Founded in 2019, Braxelle Design Lines exists to fill a gap: a publication that treats the built environment with intellectual seriousness while remaining clear, practical, and free of jargon. We write for homeowners, designers, architects, students, and anyone who has ever paused in a well-proportioned room and wondered why it felt right.</p>
+            <p>We are independent, reader-supported, and committed to publishing work that stands the test of time.</p>
+        </div>
+        <img class="mission-image" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=600&fit=crop" alt="A calm, well-proportioned modern living space with natural light and thoughtful material choices">
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-section">
+        <h2>What we stand for</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <div class="value-marker"></div>
+                <h3>Independence</h3>
+                <p>We do not publish sponsored content, and we do not accept payment for coverage. Our editorial decisions are made solely by our editors, in the interest of our readers.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-marker"></div>
+                <h3>Depth over speed</h3>
+                <p>We would rather publish one carefully researched article a week than chase the news cycle. Every piece is edited for clarity, accuracy, and lasting relevance.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-marker"></div>
+                <h3>Practical knowledge</h3>
+                <p>Design writing should help you make better decisions. Our guides are grounded in real-world constraints: budgets, building codes, climate, and the messy realities of construction.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-marker"></div>
+                <h3>Materials &amp; craft</h3>
+                <p>We are fascinated by how things are made. From lime plaster to cross-laminated timber, we explore the substances and skills that give buildings their character and longevity.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-marker"></div>
+                <h3>Historical perspective</h3>
+                <p>Contemporary design does not exist in a vacuum. We trace ideas back to their origins—the courtyard, the kitchen triangle, the bay window—to understand where we are and where we might go.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-marker"></div>
+                <h3>Reader trust</h3>
+                <p>We collect minimal data, we do not sell personal information, and we clearly disclose our policies. Our relationship with readers is built on transparency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team-section">
+        <h2>Editorial team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face" alt="Marguerite Ellison, Editor-in-Chief">
+                <div>
+                    <h3>Marguerite Ellison</h3>
+                    <div class="team-role">Editor-in-Chief</div>
+                    <p>Marguerite has spent twenty years writing about the built environment. She founded Braxelle Design Lines in 2019 to create a publication that treats architecture and interior design with the intellectual seriousness they deserve—without sacrificing clarity or usefulness. She lives in Portland, Oregon, in a 1920s bungalow she is slowly, carefully renovating.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Daniel Kovač, Architecture Editor">
+                <div>
+                    <h3>Daniel Kovač</h3>
+                    <div class="team-role">Architecture Editor</div>
+                    <p>Daniel is a writer and former practicing architect. He holds a Master of Architecture from the University of Ljubljana and has contributed to architectural journals across Europe and North America. His interests include adaptive reuse, material innovation, and the intersection of housing policy and design. He joined Braxelle in 2021.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITORIAL POLICY -->
+    <section class="editorial-policy">
+        <h2>Editorial policy</h2>
+        <p>Braxelle Design Lines is committed to publishing accurate, original, and useful writing. Our editorial policy governs how we work, what we publish, and how we handle corrections.</p>
+        <ul>
+            <li><strong>Original work:</strong> Every article we publish is written by a member of our editorial team or a commissioned contributor. We do not use AI-generated content.</li>
+            <li><strong>No sponsored content:</strong> We do not accept payment, gifts, or free products in exchange for coverage. Brands and products are mentioned only when editorially relevant.</li>
+            <li><strong>Corrections:</strong> When we make an error, we correct it promptly and transparently. Substantive corrections are noted at the bottom of the article.</li>
+            <li><strong>Independence:</strong> Our editorial team operates independently of any commercial or advertising interests. Braxelle Design Lines is reader-supported through newsletter subscriptions and affiliate partnerships that do not influence coverage.</li>
+            <li><strong>Privacy:</strong> We collect only the data necessary to operate the site and communicate with readers. We do not sell or rent personal information. See our <a href="privacy.html" style="color: var(--accent); text-decoration: underline;">Privacy Policy</a> for details.</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="contact-cta">
+        <h2>Get in touch</h2>
+        <p>We welcome editorial inquiries, story pitches, and feedback from readers. Whether you have a question about a project, a suggestion for a topic, or a correction to report, we read every message.</p>
+        <div class="cta-links">
+            <a href="mailto:editor@braxelledesignlines.com">Editorial →</a>
+            <a href="mailto:pitch@braxelledesignlines.com">Pitch a story →</a>
+            <a href="contact.html">Contact page →</a>
+        </div>
+    </section>
+
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-name">Braxelle Design Lines</div>
+                <div class="logo-tagline">Interior Design &amp; Architecture Journal</div>
+                <p>Independent editorial writing on the built environment. Published weekly from Portland, Oregon.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="categories.html">Interior Design</a></li>
+                    <li><a href="categories.html">Architecture</a></li>
+                    <li><a href="categories.html">Home Design</a></li>
+                    <li><a href="categories.html">Materials</a></li>
+                    <li><a href="categories.html">Space Planning</a></li>
+                    <li><a href="categories.html">Lighting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2025 Braxelle Design Lines. All rights reserved.</span>
+            <span>Made with care for readers who care about design.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ─── SEARCH TOGGLE ───
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    searchToggle.addEventListener('click', () => {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchInput.focus();
+        }
+    });
+
+    // ─── SIMPLE SEARCH DEMO (for about page, can be omitted) ───
+    function performSearch() {
+        const query = searchInput.value.toLowerCase().trim();
+        if (!query) return;
+        // On an about page, just redirect to home with a search query
+        window.location.href = 'index.html?search=' + encodeURIComponent(query);
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') performSearch();
+    });
+
+    // ─── CATEGORY PILLS (visual only on about page) ───
+    const catPills = document.querySelectorAll('.cat-pill');
+    catPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            catPills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            // Optionally redirect to categories page with filter
+            const cat = pill.dataset.cat;
+            if (cat !== 'all') {
+                // window.location.href = 'categories.html?cat=' + cat;
+            }
+        });
+    });
+
+    // ─── SMOOTH SCROLL FOR NAV LINKS ───
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

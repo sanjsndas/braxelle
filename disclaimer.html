@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer | Braxelle Design Lines</title>
+    <meta name="description" content="Disclaimer for Braxelle Design Lines — limitations of liability, external links, and editorial content.">
+    <meta name="author" content="Braxelle Design Lines">
+    <link rel="canonical" href="https://braxelledesignlines.com/disclaimer.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Disclaimer | Braxelle Design Lines">
+    <meta property="og:description" content="Legal disclaimer for Braxelle Design Lines.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://braxelledesignlines.com/disclaimer.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Braxelle Design Lines">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --ink-soft: #3d3d3d;
+            --ink-muted: #6b6b6b;
+            --paper: #faf9f7;
+            --paper-warm: #f5f2ed;
+            --border: #e0ddd8;
+            --border-light: #ebe8e3;
+            --accent: #8b7355;
+            --accent-hover: #6d5a44;
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --measure: 68ch;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink-soft);
+            line-height: 1.7;
+            font-size: 1rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .logo-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+        }
+
+        .logo-tagline {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--ink-muted);
+            font-weight: 500;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 0.25rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.4rem 0.75rem;
+            border-radius: 2px;
+            transition: color 0.2s, background 0.2s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: var(--ink);
+            background: var(--paper-warm);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 0.45rem 0.85rem;
+            font-size: 0.78rem;
+            font-family: var(--font-body);
+            color: var(--ink-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .search-toggle:hover {
+            border-color: var(--ink-muted);
+            color: var(--ink);
+        }
+
+        /* ─── SEARCH BAR ─── */
+        .search-bar {
+            display: none;
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+        }
+
+        .search-bar.open {
+            display: block;
+        }
+
+        .search-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .search-inner input {
+            flex: 1;
+            padding: 0.65rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            background: var(--paper);
+            color: var(--ink);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-inner input:focus {
+            border-color: var(--accent);
+        }
+
+        .search-inner button {
+            padding: 0.65rem 1.25rem;
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-inner button:hover {
+            background: var(--accent);
+        }
+
+        /* ─── PAGE HEADER ─── */
+        .page-header {
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--border);
+            padding: 3rem 0 2.5rem;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            color: var(--ink);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subhead {
+            font-size: 0.95rem;
+            color: var(--ink-muted);
+            max-width: var(--measure);
+        }
+
+        .page-header .updated {
+            display: inline-block;
+            margin-top: 0.75rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* ─── CONTENT LAYOUT ─── */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            gap: 4rem;
+            padding: 3rem 0 2rem;
+        }
+
+        .policy-body {
+            max-width: var(--measure);
+        }
+
+        .policy-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--ink);
+            font-weight: 400;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .policy-body h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .policy-body h3 {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--ink);
+            margin-top: 1.75rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .policy-body p {
+            font-size: 0.94rem;
+            line-height: 1.8;
+            color: var(--ink-soft);
+            margin-bottom: 1rem;
+        }
+
+        .policy-body ul,
+        .policy-body ol {
+            margin: 0.75rem 0 1.25rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .policy-body li {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--ink-soft);
+        }
+
+        .policy-body a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .policy-body a:hover {
+            color: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        .policy-body strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .policy-note {
+            background: var(--paper-warm);
+            border-left: 3px solid var(--accent);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .policy-note p {
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--ink-soft);
+        }
+
+        /* ─── SIDEBAR ─── */
+        .policy-sidebar {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+
+        .sidebar-card {
+            background: var(--paper-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 2px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--ink);
+            font-weight: 400;
+            margin-bottom: 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .sidebar-nav a {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            display: block;
+            border-left: 2px solid transparent;
+            padding-left: 0.75rem;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--ink);
+            border-left-color: var(--accent);
+        }
+
+        .sidebar-card p {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .sidebar-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar-card a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .sidebar-card a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer {
+            background: var(--ink);
+            color: rgba(250,249,247,0.7);
+            padding: 4rem 0 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo-name {
+            color: var(--paper);
+            font-size: 1.3rem;
+        }
+
+        .footer-brand .logo-tagline {
+            color: rgba(250,249,247,0.5);
+        }
+
+        .footer-brand p {
+            font-size: 0.82rem;
+            line-height: 1.7;
+            margin-top: 1rem;
+            color: rgba(250,249,247,0.55);
+            max-width: 32ch;
+        }
+
+        .footer-col h4 {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--paper);
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .footer-col a {
+            font-size: 0.82rem;
+            color: rgba(250,249,247,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--paper);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(250,249,247,0.12);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: rgba(250,249,247,0.4);
+        }
+
+        .footer-bottom a {
+            color: rgba(250,249,247,0.5);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--paper);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 1024px) {
+            .policy-layout {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .policy-sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .sidebar-card {
+                margin-bottom: 0;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding: 1rem 1.5rem;
+            }
+            .main-nav {
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.72rem;
+                padding: 0.35rem 0.5rem;
+            }
+            .container {
+                padding: 0 1.5rem;
+            }
+            .page-header {
+                padding: 2rem 0 1.75rem;
+            }
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+            .policy-layout {
+                padding: 2rem 0 1.5rem;
+            }
+            .policy-sidebar {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+            .policy-body h2 {
+                font-size: 1.25rem;
+            }
+            .sidebar-card {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-name">Braxelle Design Lines</span>
+            <span class="logo-tagline">Interior Design &amp; Architecture Journal</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+                <li><a href="disclaimer.html" class="active">Disclaimer</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                Search
+            </button>
+        </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+        <div class="search-inner">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+            <button id="searchBtn" type="button">Search</button>
+        </div>
+    </div>
+</header>
+
+<!-- ─── PAGE HEADER ─── -->
+<div class="page-header">
+    <div class="container">
+        <h1>Disclaimer</h1>
+        <p class="subhead">Legal limitations, editorial independence, external links, and how to interpret content on Braxelle Design Lines.</p>
+        <span class="updated">Last updated: 15 January 2025</span>
+    </div>
+</div>
+
+<!-- ─── MAIN CONTENT ─── -->
+<div class="container">
+    <div class="policy-layout">
+
+        <!-- ─── POLICY BODY ─── -->
+        <main class="policy-body">
+
+            <p>This Disclaimer applies to the website <strong>braxelledesignlines.com</strong> (the "Site"), operated by <strong>Braxelle Design Lines</strong> ("we", "us", "our"). By using the Site, you acknowledge and agree to the terms set out below. If you do not agree, please discontinue use of the Site.</p>
+
+            <div class="policy-note">
+                <p><strong>In short:</strong> Our content is for general informational purposes only. We are not providing professional design, architectural, legal, or financial advice. External links are provided for convenience, and we are not responsible for third-party content.</p>
+            </div>
+
+            <h2 id="general-information">1. General Information Only</h2>
+            <p>The content published on Braxelle Design Lines — including articles, essays, photographs, illustrations, and any other materials — is provided for <strong>general informational and editorial purposes only</strong>. While we strive to publish accurate, thoughtful, and well-researched writing, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the content.</p>
+            <p>Any reliance you place on the information on this Site is strictly at your own risk. You should not use our content as a substitute for professional advice tailored to your specific circumstances.</p>
+
+            <h2 id="no-professional-advice">2. No Professional Advice</h2>
+            <p>Braxelle Design Lines is a journalistic publication. We are not a design firm, architecture practice, engineering consultancy, or legal or financial advisory service. Nothing on this Site constitutes:</p>
+            <ul>
+                <li><strong>Architectural, engineering, or design advice</strong> — always consult a licensed professional before undertaking any construction, renovation, or structural work.</li>
+                <li><strong>Legal advice</strong> — including but not limited to building codes, permits, zoning, contracts, or intellectual property matters.</li>
+                <li><strong>Financial or investment advice</strong> — including property investment, valuation, or cost estimation.</li>
+                <li><strong>Safety or compliance advice</strong> — including fire, electrical, or accessibility regulations.</li>
+            </ul>
+            <p>Before acting on any information you read on this Site, you should seek appropriate professional guidance from a qualified expert in your jurisdiction.</p>
+
+            <h2 id="external-links">3. External Links Disclaimer</h2>
+            <p>The Site may contain links to external websites, resources, or third-party content that are not provided or maintained by us. These links are provided for your convenience and reference only. We do not:</p>
+            <ul>
+                <li>Endorse, guarantee, or assume responsibility for the accuracy, relevance, timeliness, or completeness of any information on external sites.</li>
+                <li>Control or monitor the content, privacy practices, or terms of use of any linked site.</li>
+                <li>Accept liability for any loss or damage arising from your use of any external site or resource.</li>
+            </ul>
+            <p>When you leave our Site via a link, you do so at your own risk. We encourage you to review the terms and privacy policies of any external site you visit.</p>
+
+            <h2 id="editorial-independence">4. Editorial Independence &amp; Sponsorship</h2>
+            <p>Braxelle Design Lines is an independent editorial publication. Our editorial content is not influenced by advertisers, sponsors, or commercial partners. However, we may occasionally publish sponsored content, affiliate links, or partner features. Where this occurs:</p>
+            <ul>
+                <li>Sponsored or paid content will be clearly identified as such.</li>
+                <li>Affiliate relationships, if any, will be disclosed in the relevant article or page.</li>
+                <li>Our editorial team retains full control over the topics we cover and the opinions we express.</li>
+            </ul>
+            <p>Any views or opinions expressed in articles, essays, or comments are those of the individual authors and do not necessarily reflect the official policy or position of Braxelle Design Lines as a whole.</p>
+
+            <h2 id="accuracy-of-information">5. Accuracy &amp; Timeliness of Information</h2>
+            <p>The built environment, design trends, materials, regulations, and technologies are constantly changing. While we make reasonable efforts to keep our content current, we cannot guarantee that any information on the Site is accurate, complete, or up to date at the time you access it.</p>
+            <p>We reserve the right to modify, update, or remove any content at any time without prior notice. We are under no obligation to update any information that becomes outdated. Any reliance on historical content is at your own discretion.</p>
+
+            <h2 id="limitation-of-liability">6. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by applicable law, Braxelle Design Lines, its owners, editors, contributors, and affiliates shall not be liable for any direct, indirect, incidental, consequential, special, or punitive damages arising out of or in connection with:</p>
+            <ul>
+                <li>Your use of, or inability to use, the Site or any content on it.</li>
+                <li>Any errors, omissions, or inaccuracies in the content.</li>
+                <li>Any reliance placed on the content of the Site.</li>
+                <li>Any external links or third-party content accessed through the Site.</li>
+                <li>Any interruption, suspension, or termination of the Site.</li>
+            </ul>
+            <p>This limitation applies regardless of whether the damages arise in contract, tort (including negligence), equity, or otherwise, and even if we have been advised of the possibility of such damages.</p>
+
+            <h2 id="images-rights">7. Images &amp; Rights</h2>
+            <p>Photographs and illustrations used on this Site are either original works, licensed from third parties, used with permission, or believed to be in the public domain. If you believe that any content on the Site infringes your intellectual property rights, please contact us at <a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a> and we will investigate promptly.</p>
+            <p>You may not reproduce, distribute, or republish any content from this Site without our prior written permission, except as permitted by fair use or applicable copyright law.</p>
+
+            <h2 id="testimonials">8. Testimonials &amp; Reader Contributions</h2>
+            <p>Any testimonials, reader comments, or user-generated content published on the Site reflect the personal experiences and opinions of the individuals who submitted them. They are not intended to represent or guarantee that anyone will achieve the same or similar results. We do not verify the accuracy of reader contributions and are not responsible for their content.</p>
+
+            <h2 id="changes">9. Changes to This Disclaimer</h2>
+            <p>We may update this Disclaimer from time to time to reflect changes in our practices, legal requirements, or the nature of our content. When we make material changes, we will update the "Last updated" date at the top of this page. Your continued use of the Site after any changes constitutes your acceptance of the revised Disclaimer.</p>
+
+            <h2 id="contact">10. How to Contact Us</h2>
+            <p>If you have questions about this Disclaimer, or if you believe any content on the Site requires correction or removal, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a></li>
+                <li><strong>Mail:</strong> Braxelle Design Lines, Attn: Legal, 818 NW Marshall Street, Suite 204, Portland, OR 97209, United States</li>
+            </ul>
+            <p>For more information about how we handle personal data, please see our <a href="privacy.html">Privacy Policy</a>. For our use of cookies, see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+        </main>
+
+        <!-- ─── SIDEBAR ─── -->
+        <aside class="policy-sidebar" aria-label="Policy navigation and summary">
+            <div class="sidebar-card">
+                <h3>On This Page</h3>
+                <ul class="sidebar-nav">
+                    <li><a href="#general-information">1. General Information Only</a></li>
+                    <li><a href="#no-professional-advice">2. No Professional Advice</a></li>
+                    <li><a href="#external-links">3. External Links Disclaimer</a></li>
+                    <li><a href="#editorial-independence">4. Editorial Independence</a></li>
+                    <li><a href="#accuracy-of-information">5. Accuracy &amp; Timeliness</a></li>
+                    <li><a href="#limitation-of-liability">6. Limitation of Liability</a></li>
+                    <li><a href="#images-rights">7. Images &amp; Rights</a></li>
+                    <li><a href="#testimonials">8. Testimonials</a></li>
+                    <li><a href="#changes">9. Changes to This Disclaimer</a></li>
+                    <li><a href="#contact">10. How to Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Quick Summary</h3>
+                <p>Content is for information only — not professional design, legal, or financial advice. We are not responsible for external links.</p>
+                <p><a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a></p>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Related Pages</h3>
+                <p><a href="privacy.html">Privacy Policy</a> — how we handle personal information.</p>
+                <p><a href="cookies.html">Cookies Policy</a> — our use of cookies and similar technologies.</p>
+                <p><a href="terms.html">Terms of Use</a> — rules for using our site and content.</p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-name">Braxelle Design Lines</div>
+                <div class="logo-tagline">Interior Design &amp; Architecture Journal</div>
+                <p>Independent editorial writing on the built environment. Published weekly from Portland, Oregon.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Home Design</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#">Space Planning</a></li>
+                    <li><a href="#">Lighting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2025 Braxelle Design Lines. All rights reserved.</span>
+            <span>Made with care for readers who care about design.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ─── SEARCH TOGGLE ───
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    searchToggle.addEventListener('click', () => {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchInput.focus();
+        }
+    });
+
+    // Simple search — redirects to home with query for demonstration
+    function performSearch() {
+        const query = searchInput.value.trim();
+        if (query) {
+            window.location.href = 'index.html?search=' + encodeURIComponent(query);
+        }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') performSearch();
+    });
+
+    // ─── SMOOTH SCROLL FOR SIDEBAR LINKS ───
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // ─── HIGHLIGHT ACTIVE SIDEBAR LINK ON SCROLL ───
+    const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+    const sections = document.querySelectorAll('.policy-body h2[id]');
+
+    function highlightNav() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        sidebarLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
+</script>
+
+</body>
+</html>

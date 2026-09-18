@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Braxelle Design Lines</title>
+    <meta name="description" content="Privacy Policy for Braxelle Design Lines — how we collect, use, and protect your information.">
+    <meta name="author" content="Braxelle Design Lines">
+    <link rel="canonical" href="https://braxelledesignlines.com/privacy.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy | Braxelle Design Lines">
+    <meta property="og:description" content="How Braxelle Design Lines collects, uses, and protects your information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://braxelledesignlines.com/privacy.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Braxelle Design Lines">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --ink-soft: #3d3d3d;
+            --ink-muted: #6b6b6b;
+            --paper: #faf9f7;
+            --paper-warm: #f5f2ed;
+            --border: #e0ddd8;
+            --border-light: #ebe8e3;
+            --accent: #8b7355;
+            --accent-hover: #6d5a44;
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --measure: 68ch;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink-soft);
+            line-height: 1.7;
+            font-size: 1rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .logo-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+        }
+
+        .logo-tagline {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--ink-muted);
+            font-weight: 500;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 0.25rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.4rem 0.75rem;
+            border-radius: 2px;
+            transition: color 0.2s, background 0.2s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: var(--ink);
+            background: var(--paper-warm);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 0.45rem 0.85rem;
+            font-size: 0.78rem;
+            font-family: var(--font-body);
+            color: var(--ink-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .search-toggle:hover {
+            border-color: var(--ink-muted);
+            color: var(--ink);
+        }
+
+        /* ─── SEARCH BAR ─── */
+        .search-bar {
+            display: none;
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+        }
+
+        .search-bar.open {
+            display: block;
+        }
+
+        .search-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .search-inner input {
+            flex: 1;
+            padding: 0.65rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            background: var(--paper);
+            color: var(--ink);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-inner input:focus {
+            border-color: var(--accent);
+        }
+
+        .search-inner button {
+            padding: 0.65rem 1.25rem;
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-inner button:hover {
+            background: var(--accent);
+        }
+
+        /* ─── PAGE HEADER ─── */
+        .page-header {
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--border);
+            padding: 3rem 0 2.5rem;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            color: var(--ink);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subhead {
+            font-size: 0.95rem;
+            color: var(--ink-muted);
+            max-width: var(--measure);
+        }
+
+        .page-header .updated {
+            display: inline-block;
+            margin-top: 0.75rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* ─── CONTENT LAYOUT ─── */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            gap: 4rem;
+            padding: 3rem 0 2rem;
+        }
+
+        .policy-body {
+            max-width: var(--measure);
+        }
+
+        .policy-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--ink);
+            font-weight: 400;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .policy-body h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .policy-body h3 {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--ink);
+            margin-top: 1.75rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .policy-body p {
+            font-size: 0.94rem;
+            line-height: 1.8;
+            color: var(--ink-soft);
+            margin-bottom: 1rem;
+        }
+
+        .policy-body ul,
+        .policy-body ol {
+            margin: 0.75rem 0 1.25rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .policy-body li {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--ink-soft);
+        }
+
+        .policy-body a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .policy-body a:hover {
+            color: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        .policy-body strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .policy-note {
+            background: var(--paper-warm);
+            border-left: 3px solid var(--accent);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .policy-note p {
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--ink-soft);
+        }
+
+        /* ─── SIDEBAR ─── */
+        .policy-sidebar {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+
+        .sidebar-card {
+            background: var(--paper-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 2px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--ink);
+            font-weight: 400;
+            margin-bottom: 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .sidebar-nav a {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            display: block;
+            border-left: 2px solid transparent;
+            padding-left: 0.75rem;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--ink);
+            border-left-color: var(--accent);
+        }
+
+        .sidebar-card p {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .sidebar-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar-card a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .sidebar-card a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer {
+            background: var(--ink);
+            color: rgba(250,249,247,0.7);
+            padding: 4rem 0 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo-name {
+            color: var(--paper);
+            font-size: 1.3rem;
+        }
+
+        .footer-brand .logo-tagline {
+            color: rgba(250,249,247,0.5);
+        }
+
+        .footer-brand p {
+            font-size: 0.82rem;
+            line-height: 1.7;
+            margin-top: 1rem;
+            color: rgba(250,249,247,0.55);
+            max-width: 32ch;
+        }
+
+        .footer-col h4 {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--paper);
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .footer-col a {
+            font-size: 0.82rem;
+            color: rgba(250,249,247,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--paper);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(250,249,247,0.12);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: rgba(250,249,247,0.4);
+        }
+
+        .footer-bottom a {
+            color: rgba(250,249,247,0.5);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--paper);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 1024px) {
+            .policy-layout {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .policy-sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .sidebar-card {
+                margin-bottom: 0;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding: 1rem 1.5rem;
+            }
+            .main-nav {
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.72rem;
+                padding: 0.35rem 0.5rem;
+            }
+            .container {
+                padding: 0 1.5rem;
+            }
+            .page-header {
+                padding: 2rem 0 1.75rem;
+            }
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+            .policy-layout {
+                padding: 2rem 0 1.5rem;
+            }
+            .policy-sidebar {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+            .policy-body h2 {
+                font-size: 1.25rem;
+            }
+            .sidebar-card {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-name">Braxelle Design Lines</span>
+            <span class="logo-tagline">Interior Design &amp; Architecture Journal</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                Search
+            </button>
+        </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+        <div class="search-inner">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+            <button id="searchBtn" type="button">Search</button>
+        </div>
+    </div>
+</header>
+
+<!-- ─── PAGE HEADER ─── -->
+<div class="page-header">
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subhead">This policy explains what information Braxelle Design Lines collects, how we use it, and the choices you have. We keep things minimal and transparent.</p>
+        <span class="updated">Last updated: 15 January 2025</span>
+    </div>
+</div>
+
+<!-- ─── MAIN CONTENT ─── -->
+<div class="container">
+    <div class="policy-layout">
+
+        <!-- ─── POLICY BODY ─── -->
+        <main class="policy-body">
+
+            <p>Braxelle Design Lines ("we", "us", "our") operates the website at <strong>braxelledesignlines.com</strong> and publishes editorial content about interior design and architecture. We respect your privacy and are committed to protecting any personal information you share with us. This Privacy Policy describes our practices regarding the collection, use, and disclosure of information when you visit our site or contact us.</p>
+
+            <div class="policy-note">
+                <p><strong>In short:</strong> We collect only what we need to run the publication and respond to you. We do not sell your data. We do not run third-party advertising. You can contact us at any time to ask what we hold or to request deletion.</p>
+            </div>
+
+            <h2 id="information-we-collect">1. Information We Collect</h2>
+
+            <h3>Information you provide directly</h3>
+            <p>When you contact us through our <a href="contact.html">contact form</a>, subscribe to our newsletter, or email us directly, you may provide:</p>
+            <ul>
+                <li><strong>Name</strong> — so we know how to address you.</li>
+                <li><strong>Email address</strong> — so we can reply or send you the newsletter.</li>
+                <li><strong>Message content</strong> — anything you include in your inquiry, pitch, or feedback.</li>
+                <li><strong>Subject category</strong> — the topic you select in our contact form (e.g. editorial inquiry, pitch submission).</li>
+            </ul>
+
+            <h3>Information collected automatically</h3>
+            <p>Like most websites, we collect some information automatically when you visit. This is used in aggregate to understand how readers use the site and to keep it running smoothly:</p>
+            <ul>
+                <li><strong>Log data</strong> — including your IP address, browser type, operating system, referring pages, and timestamps. This is standard server log information.</li>
+                <li><strong>Usage data</strong> — pages visited, time spent, and interactions with content. We use privacy-respecting analytics that do not track you across other websites.</li>
+                <li><strong>Device information</strong> — screen size and device type, used only to ensure the site displays correctly.</li>
+            </ul>
+
+            <h3>Cookies and similar technologies</h3>
+            <p>We use a minimal set of cookies and local storage to remember your preferences (such as whether you have dismissed a notice) and to support basic site functionality. We do not use advertising cookies or cross-site tracking cookies. For full details, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+            <h2 id="how-we-use-information">2. How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
+            <ul>
+                <li><strong>To respond to your inquiries</strong> — including editorial questions, pitch submissions, and reader feedback.</li>
+                <li><strong>To send our newsletter</strong> — if you have opted in. Every email includes an unsubscribe link.</li>
+                <li><strong>To improve our content and site</strong> — by understanding which articles are read and how readers navigate the site.</li>
+                <li><strong>To maintain security and prevent abuse</strong> — such as detecting spam or malicious activity.</li>
+                <li><strong>To comply with legal obligations</strong> — where required by applicable law.</li>
+            </ul>
+
+            <p>We do not use your personal information for automated decision-making or profiling, and we do not sell, rent, or trade your information to any third party for marketing purposes.</p>
+
+            <h2 id="legal-basis">3. Legal Basis for Processing</h2>
+            <p>Where required by law (for example, under the GDPR), we process personal data on the following legal bases:</p>
+            <ul>
+                <li><strong>Consent</strong> — when you voluntarily submit a contact form, subscribe to our newsletter, or agree to cookies.</li>
+                <li><strong>Legitimate interests</strong> — to respond to communications, maintain the security of our site, and understand how our content is used. We balance these interests against your rights.</li>
+                <li><strong>Legal obligation</strong> — where we are required to retain or disclose information by law.</li>
+            </ul>
+
+            <h2 id="sharing">4. When We Share Information</h2>
+            <p>We do not sell your personal information. We may share information only in the following limited circumstances:</p>
+            <ul>
+                <li><strong>Service providers</strong> — trusted third parties who help us operate the site, such as our email delivery service or web host. These providers are bound by contract to use your data only for the services they provide to us.</li>
+                <li><strong>Legal requirements</strong> — if required to do so by law, subpoena, or other legal process, or if we believe in good faith that disclosure is necessary to protect our rights, your safety, or the safety of others.</li>
+                <li><strong>Business transfers</strong> — in the unlikely event that Braxelle Design Lines is acquired or merged, your information may be transferred as part of that transaction. We will notify you before your data is transferred and becomes subject to a different privacy policy.</li>
+            </ul>
+
+            <h2 id="data-retention">5. Data Retention</h2>
+            <p>We retain personal information only as long as necessary for the purposes described in this policy:</p>
+            <ul>
+                <li><strong>Contact form submissions and emails</strong> — retained for up to 24 months so we can reference past correspondence, then deleted.</li>
+                <li><strong>Newsletter subscriptions</strong> — retained until you unsubscribe, plus a short period afterward to honor your request.</li>
+                <li><strong>Server logs and analytics</strong> — retained in aggregate or anonymized form for up to 12 months.</li>
+            </ul>
+            <p>When data is no longer needed, we securely delete or anonymize it.</p>
+
+            <h2 id="security">6. How We Protect Your Information</h2>
+            <p>We take reasonable and appropriate technical and organizational measures to protect your personal information, including encrypted connections (HTTPS), access controls, and regular review of our data practices. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security. Please avoid sending sensitive personal information (such as financial details or government identification numbers) through our contact form or email.</p>
+
+            <h2 id="your-rights">7. Your Rights</h2>
+            <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+            <ul>
+                <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+                <li><strong>Correction</strong> — request that we correct inaccurate or incomplete data.</li>
+                <li><strong>Deletion</strong> — request that we delete your personal data, subject to legal retention obligations.</li>
+                <li><strong>Restriction</strong> — request that we limit how we process your data.</li>
+                <li><strong>Objection</strong> — object to processing based on legitimate interests.</li>
+                <li><strong>Portability</strong> — request your data in a structured, commonly used format.</li>
+                <li><strong>Withdraw consent</strong> — where processing is based on consent, you may withdraw it at any time.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us at <a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a>. We will respond within 30 days. You also have the right to lodge a complaint with your local data protection authority.</p>
+
+            <h2 id="children">8. Children's Privacy</h2>
+            <p>Braxelle Design Lines is an editorial publication intended for a general adult audience. We do not knowingly collect personal information from children under 16. If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
+
+            <h2 id="international">9. International Visitors</h2>
+            <p>Our site is operated from the United States. If you are visiting from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States, where our servers and service providers are located. By using our site or contacting us, you consent to this transfer. We take steps to ensure that any international transfer of data complies with applicable law and that appropriate safeguards are in place.</p>
+
+            <h2 id="third-party-links">10. Links to Other Sites</h2>
+            <p>Our articles may contain links to external websites, including sources, references, and resources we think are useful. We are not responsible for the privacy practices or content of those sites. We encourage you to read the privacy policies of any site you visit through our links.</p>
+
+            <h2 id="changes">11. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make material changes, we will update the "Last updated" date at the top of this page and, where appropriate, provide a notice on our homepage. We encourage you to review this page periodically.</p>
+
+            <h2 id="contact">12. How to Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, want to exercise your rights, or have concerns about how your information is handled, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a></li>
+                <li><strong>Mail:</strong> Braxelle Design Lines, Attn: Privacy, 818 NW Marshall Street, Suite 204, Portland, OR 97209, United States</li>
+            </ul>
+            <p>We take privacy seriously and will do our best to resolve any concern promptly and transparently.</p>
+
+        </main>
+
+        <!-- ─── SIDEBAR ─── -->
+        <aside class="policy-sidebar" aria-label="Policy navigation and summary">
+            <div class="sidebar-card">
+                <h3>On This Page</h3>
+                <ul class="sidebar-nav">
+                    <li><a href="#information-we-collect">1. Information We Collect</a></li>
+                    <li><a href="#how-we-use-information">2. How We Use Information</a></li>
+                    <li><a href="#legal-basis">3. Legal Basis</a></li>
+                    <li><a href="#sharing">4. When We Share Information</a></li>
+                    <li><a href="#data-retention">5. Data Retention</a></li>
+                    <li><a href="#security">6. How We Protect Your Data</a></li>
+                    <li><a href="#your-rights">7. Your Rights</a></li>
+                    <li><a href="#children">8. Children's Privacy</a></li>
+                    <li><a href="#international">9. International Visitors</a></li>
+                    <li><a href="#third-party-links">10. Links to Other Sites</a></li>
+                    <li><a href="#changes">11. Changes to This Policy</a></li>
+                    <li><a href="#contact">12. How to Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Quick Summary</h3>
+                <p>We collect only what you choose to share and basic analytics. We never sell your data. You can ask us to delete your information at any time.</p>
+                <p><a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a></p>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Related Pages</h3>
+                <p><a href="terms.html">Terms of Use</a> — rules for using our site and content.</p>
+                <p><a href="cookies.html">Cookies Policy</a> — how we use cookies and similar technologies.</p>
+                <p><a href="contact.html">Contact</a> — reach the editorial team.</p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-name">Braxelle Design Lines</div>
+                <div class="logo-tagline">Interior Design &amp; Architecture Journal</div>
+                <p>Independent editorial writing on the built environment. Published weekly from Portland, Oregon.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Home Design</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#">Space Planning</a></li>
+                    <li><a href="#">Lighting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2025 Braxelle Design Lines. All rights reserved.</span>
+            <span>Made with care for readers who care about design.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ─── SEARCH TOGGLE ───
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    searchToggle.addEventListener('click', () => {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchInput.focus();
+        }
+    });
+
+    // Simple search — redirects to home with query for demonstration
+    function performSearch() {
+        const query = searchInput.value.trim();
+        if (query) {
+            window.location.href = 'index.html?search=' + encodeURIComponent(query);
+        }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') performSearch();
+    });
+
+    // ─── SMOOTH SCROLL FOR SIDEBAR LINKS ───
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // ─── HIGHLIGHT ACTIVE SIDEBAR LINK ON SCROLL ───
+    const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+    const sections = document.querySelectorAll('.policy-body h2[id]');
+
+    function highlightNav() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        sidebarLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
+
+    // ─── UPDATE "LAST UPDATED" DATE AUTOMATICALLY (OPTIONAL) ───
+    // This keeps the date current if you prefer dynamic, otherwise remove or keep static.
+    // (We'll leave the static date as written for editorial control.)
+</script>
+
+</body>
+</html>

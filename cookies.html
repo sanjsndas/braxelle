@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy | Braxelle Design Lines</title>
+    <meta name="description" content="Cookies Policy for Braxelle Design Lines — how we use cookies and similar technologies.">
+    <meta name="author" content="Braxelle Design Lines">
+    <link rel="canonical" href="https://braxelledesignlines.com/cookies.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cookies Policy | Braxelle Design Lines">
+    <meta property="og:description" content="How Braxelle Design Lines uses cookies and similar technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://braxelledesignlines.com/cookies.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Braxelle Design Lines">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --ink-soft: #3d3d3d;
+            --ink-muted: #6b6b6b;
+            --paper: #faf9f7;
+            --paper-warm: #f5f2ed;
+            --border: #e0ddd8;
+            --border-light: #ebe8e3;
+            --accent: #8b7355;
+            --accent-hover: #6d5a44;
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --measure: 68ch;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink-soft);
+            line-height: 1.7;
+            font-size: 1rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            border-bottom: 1px solid var(--border);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .logo-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+        }
+
+        .logo-tagline {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--ink-muted);
+            font-weight: 500;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 0.25rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.4rem 0.75rem;
+            border-radius: 2px;
+            transition: color 0.2s, background 0.2s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: var(--ink);
+            background: var(--paper-warm);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            padding: 0.45rem 0.85rem;
+            font-size: 0.78rem;
+            font-family: var(--font-body);
+            color: var(--ink-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .search-toggle:hover {
+            border-color: var(--ink-muted);
+            color: var(--ink);
+        }
+
+        /* ─── SEARCH BAR ─── */
+        .search-bar {
+            display: none;
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+        }
+
+        .search-bar.open {
+            display: block;
+        }
+
+        .search-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .search-inner input {
+            flex: 1;
+            padding: 0.65rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            background: var(--paper);
+            color: var(--ink);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-inner input:focus {
+            border-color: var(--accent);
+        }
+
+        .search-inner button {
+            padding: 0.65rem 1.25rem;
+            background: var(--ink);
+            color: var(--paper);
+            border: none;
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-inner button:hover {
+            background: var(--accent);
+        }
+
+        /* ─── PAGE HEADER ─── */
+        .page-header {
+            background: var(--paper-warm);
+            border-bottom: 1px solid var(--border);
+            padding: 3rem 0 2.5rem;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            color: var(--ink);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subhead {
+            font-size: 0.95rem;
+            color: var(--ink-muted);
+            max-width: var(--measure);
+        }
+
+        .page-header .updated {
+            display: inline-block;
+            margin-top: 0.75rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* ─── CONTENT LAYOUT ─── */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            gap: 4rem;
+            padding: 3rem 0 2rem;
+        }
+
+        .policy-body {
+            max-width: var(--measure);
+        }
+
+        .policy-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--ink);
+            font-weight: 400;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .policy-body h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .policy-body h3 {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--ink);
+            margin-top: 1.75rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .policy-body p {
+            font-size: 0.94rem;
+            line-height: 1.8;
+            color: var(--ink-soft);
+            margin-bottom: 1rem;
+        }
+
+        .policy-body ul,
+        .policy-body ol {
+            margin: 0.75rem 0 1.25rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .policy-body li {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--ink-soft);
+        }
+
+        .policy-body a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .policy-body a:hover {
+            color: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        .policy-body strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .policy-note {
+            background: var(--paper-warm);
+            border-left: 3px solid var(--accent);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .policy-note p {
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--ink-soft);
+        }
+
+        /* Cookie table */
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.86rem;
+        }
+
+        .cookie-table th {
+            text-align: left;
+            font-weight: 600;
+            color: var(--ink);
+            padding: 0.6rem 0.75rem;
+            border-bottom: 2px solid var(--border);
+            background: var(--paper-warm);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .cookie-table td {
+            padding: 0.65rem 0.75rem;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--ink-soft);
+            vertical-align: top;
+        }
+
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cookie-table code {
+            font-size: 0.82rem;
+            background: var(--paper-warm);
+            padding: 0.15rem 0.4rem;
+            border-radius: 2px;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* ─── SIDEBAR ─── */
+        .policy-sidebar {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+
+        .sidebar-card {
+            background: var(--paper-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 2px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--ink);
+            font-weight: 400;
+            margin-bottom: 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .sidebar-nav a {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            display: block;
+            border-left: 2px solid transparent;
+            padding-left: 0.75rem;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--ink);
+            border-left-color: var(--accent);
+        }
+
+        .sidebar-card p {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .sidebar-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar-card a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .sidebar-card a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer {
+            background: var(--ink);
+            color: rgba(250,249,247,0.7);
+            padding: 4rem 0 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo-name {
+            color: var(--paper);
+            font-size: 1.3rem;
+        }
+
+        .footer-brand .logo-tagline {
+            color: rgba(250,249,247,0.5);
+        }
+
+        .footer-brand p {
+            font-size: 0.82rem;
+            line-height: 1.7;
+            margin-top: 1rem;
+            color: rgba(250,249,247,0.55);
+            max-width: 32ch;
+        }
+
+        .footer-col h4 {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--paper);
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .footer-col a {
+            font-size: 0.82rem;
+            color: rgba(250,249,247,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--paper);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(250,249,247,0.12);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: rgba(250,249,247,0.4);
+        }
+
+        .footer-bottom a {
+            color: rgba(250,249,247,0.5);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--paper);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 1024px) {
+            .policy-layout {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .policy-sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .sidebar-card {
+                margin-bottom: 0;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding: 1rem 1.5rem;
+            }
+            .main-nav {
+                gap: 0.1rem;
+            }
+            .main-nav a {
+                font-size: 0.72rem;
+                padding: 0.35rem 0.5rem;
+            }
+            .container {
+                padding: 0 1.5rem;
+            }
+            .page-header {
+                padding: 2rem 0 1.75rem;
+            }
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+            .policy-layout {
+                padding: 2rem 0 1.5rem;
+            }
+            .policy-sidebar {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .cookie-table {
+                font-size: 0.78rem;
+            }
+            .cookie-table th,
+            .cookie-table td {
+                padding: 0.5rem 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+            .policy-body h2 {
+                font-size: 1.25rem;
+            }
+            .sidebar-card {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-name">Braxelle Design Lines</span>
+            <span class="logo-tagline">Interior Design &amp; Architecture Journal</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html" class="active">Cookies Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                Search
+            </button>
+        </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+        <div class="search-inner">
+            <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword..." aria-label="Search articles">
+            <button id="searchBtn" type="button">Search</button>
+        </div>
+    </div>
+</header>
+
+<!-- ─── PAGE HEADER ─── -->
+<div class="page-header">
+    <div class="container">
+        <h1>Cookies Policy</h1>
+        <p class="subhead">This policy explains how Braxelle Design Lines uses cookies and similar technologies, what they do, and how you can control them.</p>
+        <span class="updated">Last updated: 15 January 2025</span>
+    </div>
+</div>
+
+<!-- ─── MAIN CONTENT ─── -->
+<div class="container">
+    <div class="policy-layout">
+
+        <!-- ─── POLICY BODY ─── -->
+        <main class="policy-body">
+
+            <p>This Cookies Policy describes how <strong>Braxelle Design Lines</strong> ("we", "us", "our") uses cookies, local storage, and similar technologies on our website at <strong>braxelledesignlines.com</strong>. It should be read alongside our <a href="privacy.html">Privacy Policy</a>, which explains how we handle personal information more broadly.</p>
+
+            <div class="policy-note">
+                <p><strong>In short:</strong> We use a minimal set of cookies — mostly for basic site functionality and privacy-respecting analytics. We do not use advertising cookies or cross-site tracking cookies. You can control or delete cookies through your browser settings at any time.</p>
+            </div>
+
+            <h2 id="what-are-cookies">1. What Are Cookies?</h2>
+            <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work efficiently, to remember your preferences, and to provide information to the site owners about how the site is being used.</p>
+            <p>Cookies can be <strong>"session cookies"</strong> (which are deleted when you close your browser) or <strong>"persistent cookies"</strong> (which remain on your device for a set period or until you delete them). They can also be <strong>"first-party cookies"</strong> (set by the site you are visiting) or <strong>"third-party cookies"</strong> (set by a domain other than the one you are visiting).</p>
+            <p>In addition to cookies, we may use other similar technologies such as <strong>local storage</strong> and <strong>session storage</strong>, which store information in your browser without sending it back to a server with every request.</p>
+
+            <h2 id="how-we-use-cookies">2. How We Use Cookies</h2>
+            <p>We use cookies and similar technologies for the following limited purposes:</p>
+
+            <h3>Strictly necessary cookies</h3>
+            <p>These are essential for the website to function properly. They enable core functionality such as security, network management, and accessibility. Without these cookies, the site may not work correctly. These do not require your consent because they are necessary to provide the service you have requested.</p>
+
+            <h3>Preference cookies</h3>
+            <p>These cookies allow the site to remember choices you have made, such as whether you have dismissed a notice or banner. They help provide a more personalized experience and avoid you having to re-enter preferences each time you visit.</p>
+
+            <h3>Analytics cookies</h3>
+            <p>We use a privacy-respecting analytics service to understand how readers use our site — which articles are popular, how visitors navigate between pages, and where readers come from. This information is used in aggregate and does not identify you personally. We do not use analytics cookies to track you across other websites.</p>
+
+            <h3>No advertising or tracking cookies</h3>
+            <p>We do not use advertising cookies, retargeting cookies, or any cookies that track your browsing activity across other websites. We do not sell or share cookie data with advertisers or data brokers.</p>
+
+            <h2 id="cookies-we-set">3. Specific Cookies We Set</h2>
+            <p>The table below lists the specific cookies and storage items we currently use, along with their purpose and duration:</p>
+
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>braxelle_consent</code></td>
+                        <td>Preference</td>
+                        <td>Remembers whether you have acknowledged our cookie notice.</td>
+                        <td>12 months</td>
+                    </tr>
+                    <tr>
+                        <td><code>braxelle_prefs</code></td>
+                        <td>Preference</td>
+                        <td>Stores basic UI preferences, such as search bar state.</td>
+                        <td>6 months</td>
+                    </tr>
+                    <tr>
+                        <td><code>_pk_id</code></td>
+                        <td>Analytics</td>
+                        <td>Used by our privacy-focused analytics to distinguish unique visitors. Anonymized.</td>
+                        <td>13 months</td>
+                    </tr>
+                    <tr>
+                        <td><code>_pk_ses</code></td>
+                        <td>Analytics</td>
+                        <td>Short-lived session cookie used to group page views into a single visit.</td>
+                        <td>30 minutes</td>
+                    </tr>
+                    <tr>
+                        <td><code>braxelle_session</code></td>
+                        <td>Strictly necessary</td>
+                        <td>Maintains basic session state and security tokens.</td>
+                        <td>Session</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>We may occasionally update this table if we change the cookies we use. Any material changes will be reflected in the "Last updated" date at the top of this page.</p>
+
+            <h2 id="third-party-cookies">4. Third-Party Cookies</h2>
+            <p>We do not set third-party advertising or tracking cookies. However, some pages may include embedded content (such as a YouTube video or a social media post) that could set cookies from those third-party services. We do not control those cookies, and they are governed by the privacy policies of the respective platforms. We encourage you to review their policies if you interact with such content.</p>
+            <p>Our analytics provider is contractually bound to use the data only for the purpose of providing analytics to us, and to process it in accordance with applicable data protection law.</p>
+
+            <h2 id="managing-cookies">5. How to Manage Cookies</h2>
+            <p>You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by:</p>
+            <ul>
+                <li><strong>Browser settings</strong> — Most web browsers allow you to control cookies through their settings. You can typically find these options in the "Privacy" or "Security" section of your browser's settings menu. You can also delete cookies that have already been set.</li>
+                <li><strong>Opt-out tools</strong> — Some third-party services provide opt-out mechanisms. For our analytics provider, you can typically opt out via their website or by using browser-based opt-out tools.</li>
+                <li><strong>Device settings</strong> — On mobile devices, you may have additional controls over tracking through your device's privacy settings.</li>
+            </ul>
+            <p>Please note that if you disable or delete cookies, some parts of the website may not function properly, and your preferences may be lost.</p>
+
+            <div class="policy-note">
+                <p><strong>Browser help:</strong> For more information about how to manage cookies, you can visit <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">allaboutcookies.org</a> or consult the help documentation for your specific browser.</p>
+            </div>
+
+            <h2 id="consent">6. Your Consent</h2>
+            <p>When you first visit our site, you may see a notice about our use of cookies. By continuing to use our site after that notice, or by clicking "Accept" where applicable, you consent to our use of cookies as described in this policy. You can withdraw your consent at any time by deleting cookies from your browser and adjusting your browser settings to block them in the future.</p>
+            <p>Where required by law, we will obtain your explicit consent before setting any non-essential cookies. Strictly necessary cookies do not require consent as they are essential to provide the service you have requested.</p>
+
+            <h2 id="changes">7. Changes to This Policy</h2>
+            <p>We may update this Cookies Policy from time to time to reflect changes in technology, legislation, or our practices. When we make material changes, we will update the "Last updated" date at the top of this page and, where appropriate, provide a notice on our homepage. We encourage you to review this page periodically to stay informed about how we use cookies.</p>
+
+            <h2 id="contact">8. How to Contact Us</h2>
+            <p>If you have questions about this Cookies Policy or our use of cookies, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a></li>
+                <li><strong>Mail:</strong> Braxelle Design Lines, Attn: Privacy, 818 NW Marshall Street, Suite 204, Portland, OR 97209, United States</li>
+            </ul>
+            <p>For more information about how we handle your personal data more generally, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+
+        </main>
+
+        <!-- ─── SIDEBAR ─── -->
+        <aside class="policy-sidebar" aria-label="Policy navigation and summary">
+            <div class="sidebar-card">
+                <h3>On This Page</h3>
+                <ul class="sidebar-nav">
+                    <li><a href="#what-are-cookies">1. What Are Cookies?</a></li>
+                    <li><a href="#how-we-use-cookies">2. How We Use Cookies</a></li>
+                    <li><a href="#cookies-we-set">3. Specific Cookies We Set</a></li>
+                    <li><a href="#third-party-cookies">4. Third-Party Cookies</a></li>
+                    <li><a href="#managing-cookies">5. How to Manage Cookies</a></li>
+                    <li><a href="#consent">6. Your Consent</a></li>
+                    <li><a href="#changes">7. Changes to This Policy</a></li>
+                    <li><a href="#contact">8. How to Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Quick Summary</h3>
+                <p>We use only essential and privacy-respecting analytics cookies. No advertising, no cross-site tracking. You can control cookies through your browser.</p>
+                <p><a href="mailto:editor@braxelledesignlines.com">editor@braxelledesignlines.com</a></p>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Related Pages</h3>
+                <p><a href="privacy.html">Privacy Policy</a> — how we handle personal information.</p>
+                <p><a href="terms.html">Terms of Use</a> — rules for using our site and content.</p>
+                <p><a href="contact.html">Contact</a> — reach the editorial team.</p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-name">Braxelle Design Lines</div>
+                <div class="logo-tagline">Interior Design &amp; Architecture Journal</div>
+                <p>Independent editorial writing on the built environment. Published weekly from Portland, Oregon.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Home Design</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#">Space Planning</a></li>
+                    <li><a href="#">Lighting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2025 Braxelle Design Lines. All rights reserved.</span>
+            <span>Made with care for readers who care about design.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ─── SEARCH TOGGLE ───
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    searchToggle.addEventListener('click', () => {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchInput.focus();
+        }
+    });
+
+    // Simple search — redirects to home with query for demonstration
+    function performSearch() {
+        const query = searchInput.value.trim();
+        if (query) {
+            window.location.href = 'index.html?search=' + encodeURIComponent(query);
+        }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') performSearch();
+    });
+
+    // ─── SMOOTH SCROLL FOR SIDEBAR LINKS ───
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // ─── HIGHLIGHT ACTIVE SIDEBAR LINK ON SCROLL ───
+    const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+    const sections = document.querySelectorAll('.policy-body h2[id]');
+
+    function highlightNav() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        sidebarLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
+</script>
+
+</body>
+</html>
